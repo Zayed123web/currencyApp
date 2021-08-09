@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Currency Converter App</title>
+  </head>
+  <body class="text-center" style="background-color: rgba(0,0,0,.03);">
+    <div class="container">
+      <div class="card text-center m-auto bg-success" style="width: 38rem; --bs-bg-opacity: .025;">
+        <div class="card-body">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title font-monospace text-muted">Currency Converter App</h2>
+            </div>
+            <div class="card-body mt-2">
+              <h5 class="card-title">Here You Will See The Result</h5>
+              <!-- <a href="#" class="btn btn-primary">Reset</a> -->
+              <!-- <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                <label class="btn btn-outline-dark" for="btncheck1">Reset</label>
+              </div> -->
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <div class="input-group flex-nowrap">
+                <!-- <span class="input-group-text" id="addon-wrapping">@</span> -->
+                <input id="firstInput" type="number" class="form-control" placeholder="Input Your Query Here" aria-label="Username" aria-describedby="addon-wrapping">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <select id="firstList" class="form-select" aria-label="Default select example">
+                <option selected>Select Country</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-md-6">
+              <div class="input-group flex-nowrap">
+                <!-- <span class="input-group-text" id="addon-wrapping">@</span> -->
+                <input id="secondInput" type="text" class="form-control" placeholder="Input Here" aria-label="Username" aria-describedby="addon-wrapping">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <select id="secondList" class="form-select" aria-label="Default select example">
+                <option selected>Select Country</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+    <script src="app.js"></script>
+  </body>
+</html>
