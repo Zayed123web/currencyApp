@@ -4,7 +4,7 @@ const currencyData = {
     try{
       const res = await fetch(`https://free.currconv.com/api/v7/countries?apiKey=919a43c8b41482af2dee`);
       const data = await res.json();
-      return data;
+      console.log(data);
     }catch (err){
       console.log(err.message);
     }
@@ -34,10 +34,16 @@ const currencyUI = {
     secondInput.addEventListener('change', this.updateData);
     // secondList.addEventListener('change', this.updateData);
   },
-  updateData(e){
+  // async updateData(e){
+  //   e.preventDefault();
+  //   console.log(firstInput.value);
+  //   const dataFet = await currencyData.getCurrencyData();
+  //   console.log(dataFet.results);
+  // }
+  async updateData(e){
     e.preventDefault();
     console.log(firstInput.value);
-    const dataFet = currencyData.getCurrencyData();
+    const dataFet = await currencyData.getCurrencyData();
     console.log(dataFet.results);
   }
   
